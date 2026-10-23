@@ -1,6 +1,6 @@
 # Hi, I'm Virkha 👋
 
-**Lead Research Engineer (Computer Vision & ML)** at a Retrocausal AI, working remotely from Karachi, Pakistan. 
+**Lead Research Engineer (Computer Vision & ML)** at Retrocausal AI, working remotely from Karachi, Pakistan. 
 
 I work on **video understanding and industrial computer vision**: making models work on real, messy production data, and figuring out *why* they fail.
 
@@ -11,7 +11,7 @@ I work on **video understanding and industrial computer vision**: making models 
 - **Temporal action detection**: real-time action detection for industrial assembly lines
 - **Visual representations**: DINOv2 / SigLIP encoder ablations for scene- and object-level features
 - **Data-centric CV**: dataset quality pipelines with self-supervised embeddings, PaCMAP, and HDBSCAN
-- **Video models**: VLMs fine-tuning
+- **Video models**: Video transformer fine-tuning (VideoMAE, InternVL)
 - **Detection & deployment**: YOLO-based detection, edge deployment
 
 ---
