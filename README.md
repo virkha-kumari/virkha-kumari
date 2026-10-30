@@ -49,6 +49,3 @@ Video understanding · Few-shot & self-supervised visual representations · Data
 
 **BS Computer Science**, FAST-NUCES · Magna Cum Laude
 
----
-
-📫 virkhakumarimulani@gmail.com
