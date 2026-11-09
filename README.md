@@ -1,6 +1,6 @@
 # Hi, I'm Virkha 👋
 
-**Lead Research Engineer (Computer Vision & ML)** at Retrocausal AI, working remotely from Karachi, Pakistan.
+**Lead ML Engineer (Computer Vision)** at Retrocausal AI, working remotely from Karachi, Pakistan.
 
 I work on **video understanding and industrial computer vision**: making models work on real, messy production data, and figuring out *why* they fail.
 
@@ -24,7 +24,7 @@ Label a few instances per class, auto-annotate the rest. No text prompts, no tra
 
 - **Pipeline A:** YOLOe visual-prompt proposals → SAM2 masks → DINOv2 masked-patch similarity → WBF
 - **Pipeline B:** SAM3 cross-image few-shot via canvas-composite exemplars → DINOv2 gate → voting across exemplars
-- k-shot sweep on Construction-PPE (12 classes, 200 test images): **Pipeline B hits mAP@.50 = 0.610 with 10 exemplars, recall 0.791**; Pipeline A peaks at mAP@.50 = 0.542 with higher precision (0.656)
+- k-shot sweep on Construction-PPE (12 classes, 200 test images): **Pipeline B reaches the highest mAP@.50 (0.610) and recall (0.791) with 10 exemplars, but at low precision (0.356, F1 0.491) and 121 min per 200 images.** Pipeline A peaks at mAP@.50 = 0.542 with precision 0.656, F1 0.655 and 63 min, so it is the better choice when false positives are costly.
 - Documented design history and negative results (OWLv2, SAM2/SAM3 auto-mask as proposers, averaged prototypes, full-crop CLS), with the reason each was dropped
 - Evaluation harness: per-class P/R/F1, AP@.50, mAP@.50:.95. Full ablation and per-class tables in [docs/ablation.md](https://github.com/virkha-kumari/Auto_Annotation_YOLO_formatted/blob/main/docs/ablation.md)
 
